@@ -61,7 +61,7 @@ def assistant(command):
         talkToMe('Who is the recipient')
         recipient = myCommand()
 
-        if 'John' in recipient:
+        if 'MySelf' in recipient:
             talkToMe('what should i say')
             content = myCommand()
 
@@ -88,17 +88,122 @@ def assistant(command):
             talkToMe('your email has been sent')
 
 
+        if 'Mama' in recipient:
+                    talkToMe('what should i say')
+                    content = myCommand()
+
+                    #init gmail smtp
+                    mail = smtplib.SMTP('smtp.gmail.com', 587)
+
+                    #identify to server
+                    mail.ehlo()
+
+                    #encrypt session
+                    mail.starttls()
+
+                    #login
+                    mail.login('username', 'password')
+
+                    #send message
+
+                    mail.sendmail('PERSON NAME', 'tamara@smeulders.be', content)
+
+                    #close connection
+
+                    mail.close()
+
+                    talkToMe('your email has been sent')
+
+
+            if 'papa' in recipient:
+                                talkToMe('what should i say')
+                                content = myCommand()
+
+                                #init gmail smtp
+                                mail = smtplib.SMTP('smtp.gmail.com', 587)
+
+                                #identify to server
+                                mail.ehlo()
+
+                                #encrypt session
+                                mail.starttls()
+
+                                #login
+                                mail.login('username', 'password')
+
+                                #send message
+
+                                mail.sendmail('PERSON NAME', 'hans.lodewijck@me.com', content)
+
+                                #close connection
+
+                                mail.close()
+
+                                talkToMe('your email has been sent')
+
+            if 'Mandy' in recipient:
+                                talkToMe('what should i say')
+                                content = myCommand()
+
+                                #init gmail smtp
+                                mail = smtplib.SMTP('smtp.gmail.com', 587)
+
+                                #identify to server
+                                mail.ehlo()
+
+                                #encrypt session
+                                mail.starttls()
+
+                                #login
+                                mail.login('username', 'password')
+
+                                #send message
+
+                                mail.sendmail('PERSON NAME', 'mandy.lodewijck@gmail.com', content)
+
+                                #close connection
+
+                                mail.close()
+
+                                talkToMe('your email has been sent')
+
+            else
+                  talkToMe('what should i say')
+                  content = myCommand()
+
+                  talkToMe('to what email address')
+                  emailAddrs = myCommand
+
+                  talkToMe('what is the name of the reciever')
+                  Rname = myCommand
+
+                  #init gmail smpt
+                  mail = smptlib.SMTP('smtp.gmail.com', 584)
+
+                  #identify to server
+                  mail.ehlo()
+
+                  #encrypt session
+                  mail.starttls()
+
+                  #login
+                  mail.login('username', 'password')
+
+                  #send message
+
+                  mail.sendmail(Rname, emailAddrs, content)
+
+                  #close connection
+
+                  mail.close
+
+                  talkToMe('your email has been send')
+
 
 
 talkToMe('I am ready for your command')
 
-            if else
 
-            talkToMe('I will search on the internet')
-
-            chrome_path = '/usr/bin/google-chrome'
-            url = ('http://' + command)
-            webbrowser.get(chrome_path).open(url)
 
 while True:
 
